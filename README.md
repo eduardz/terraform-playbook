@@ -20,21 +20,20 @@ Example Playbook
 ----------------
 
     ```bash
-├── ansible.cfg
-├── apply.yml
-├── destroy.yml
-├── inventory
-├── proxmox.template.sh
-├── README.md
-├── roles
-│   └── terraform-role
-│       └── tasks
-│           └── main.yml
-└── terraform
+    ├── ansible.cfg
+    ├── apply.yml
+    ├── destroy.yml
+    ├── inventory
+    ├── proxmox.template.sh
+    ├── README.md
+    ├── roles
+    │   └── terraform-role
+    │       └── tasks
+    │           └── main.yml
+    └── terraform
     ├── \
     ├── main.tf
     └── variables.tf
-
     ```
 
 Setup ansible
