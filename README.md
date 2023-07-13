@@ -12,13 +12,14 @@ Terraform 1.2+ \
 Needed modules to download from internet: \
 ansible-galaxy collection install community.general \
 ansible-galaxy collection install cloud.terraform \
-(The community.general.terraform module)
+(The community.general.terraform module) \
 https://docs.ansible.com/ansible/latest/collections/community/general/terraform_module.html
 
 
 Example Playbook
 ----------------
 
+    ```bash
 ├── ansible.cfg
 ├── apply.yml
 ├── destroy.yml
@@ -34,9 +35,12 @@ Example Playbook
     ├── main.tf
     └── variables.tf
 
+    ```
 
-export PM_PASS='proxmox-PVE-pass'
-
+Setup ansible
+    ```bash
+export PM_PASS='proxmox-PVE-pass' \
+    ```
 
 Initiate ansible role for terraform: \
 `ansible-playbook -i inventory apply.yml  -vvvv`
