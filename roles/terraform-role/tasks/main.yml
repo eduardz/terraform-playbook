@@ -1,0 +1,9 @@
+---
+- name: apply
+  community.general.terraform:
+    project_path: "{{ project_dir }}"
+    state: present
+    force_init: true
+    backend_config:
+      ssh_user: "terraform"
+

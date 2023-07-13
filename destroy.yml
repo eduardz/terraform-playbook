@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: true
+  connection: local
+
+  vars:
+    project_dir: terraform/ 
+
+  tasks:
+  - name: Basic deploy of a service
+    cloud.terraform.terraform:
+      project_path: "{{ project_dir }}"
+      state: absent

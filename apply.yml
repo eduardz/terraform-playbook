@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+  connection: local
+
+  vars:
+    project_dir: terraform/ 
+
+  roles:
+    - terraform-role
