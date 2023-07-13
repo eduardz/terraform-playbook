@@ -38,7 +38,7 @@ Example Playbook
 
 Setup ansible
     ```bash
-export PM_PASS='proxmox-PVE-pass' \
+    export PM_PASS='proxmox-PVE-pass' \
     ```
 
 Initiate ansible role for terraform: \
